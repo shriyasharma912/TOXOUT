@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body takes the full viewport height */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the form container */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color:rgb(252, 246, 235);;;
+}
+
+form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+label, input, button {
+    margin: 10px 0; 
+}
+
+label {
+    font-family: Playfair display;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+input {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 550px;
+    height: 350px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 80px;
+    padding: 10px 20px;
+    background-color: #d2b897;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.faq-box {
+    width: 100%;
+    max-width: 900px;
+    background: #e2bb99;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 200px;
+
+}
+
+.faq-header {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #cfad91;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item:hover {
+    background: #d7b08d;
+}
+
+.faq-question {
+    font-size: 28px;
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question svg {
+    width: 16px;
+    height: 16px;
+    fill: #888;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .faq-question svg {
+    transform: rotate(180deg);
+}
+
+.faq-content {
+    display: none;
+    font-size: 22px;
+    color: #666;
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.faq-item.active .faq-content {
+    display: block;
+}
+
+.pro {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px; /* Adjust the margin as needed */
+    margin-top: -250px; /* Adjust the top margin to align with your box */
+    padding-right: 50px;
+}
+
+
+.yellow{
+    display: flex;
+}
